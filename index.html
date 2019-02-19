@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.3.0.60745 -->
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin">
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+<script>jQuery(function ($) {
+    'use strict';
+    if ($.fn.themeSlider) {
+        $(".art-slidecontainer1366_2000").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            inner.children().filter("script").remove();
+            var helper = null;
+            
+            if ($.support.themeTransition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.themeTransition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+                
+            } else if (browser.ie && browser.version <= 8) {
+                var slidesInfo = {
+".art-slide1366_20000": {
+    "bgimage" : "url('images/slide1366_20000.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide1366_20001": {
+    "bgimage" : "url('images/slide1366_20001.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide1366_20002": {
+    "bgimage" : "url('images/slide1366_20002.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide1366_20003": {
+    "bgimage" : "url('images/slide1366_20003.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide1366_20004": {
+    "bgimage" : "url('images/slide1366_20004.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+},
+".art-slide1366_20005": {
+    "bgimage" : "url('images/slide1366_20005.png')",
+    "bgposition": "0 0",
+    "images": "",
+    "positions": ""
+}
+                };
+                $.each(slidesInfo, function(selector, info) {
+                    processElementMultiplyBg(slideContainer.find(selector), info);
+                });
+            }
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.themeSlider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigator1366_2000"),
+                helper: helper
+            });
+            
+                        
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { padding: 20px;  }
+.art-content .art-postcontent-0 .layout-item-1 { color: #292929; background: #F0F0F0;  }
+.art-content .art-postcontent-0 .layout-item-2 { color: #292929; padding: 20px;  }
+.art-content .art-postcontent-0 .layout-item-3 { color: #262626; background: #E5E5E5; padding: 20px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainer1366_2000 {
+    position: relative;
+        width: 600px;
+    height: 360px;
+        }
+
+.default-responsive .art-header .art-slidecontainer1366_2000,
+.responsive .art-header .art-slidecontainer1366_2000
+{
+  position: absolute !important;
+}
+
+.responsive .art-pageslider .art-slidecontainer1366_2000 {
+  position: absolute !important;
+}
+
+.art-slidecontainer1366_2000 .art-slide-item
+{
+
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+
+.art-slidecontainer1366_2000 .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute !important;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainer1366_2000 .active, .art-slidecontainer1366_2000 .next, .art-slidecontainer1366_2000 .prev {
+    display: block;
+}
+
+.art-slidecontainer1366_2000 .active {
+    opacity: 1;
+}
+
+.art-slidecontainer1366_2000 .next, .art-slidecontainer1366_2000 .prev {
+    width: 100%;
+}
+
+.art-slidecontainer1366_2000 .next.forward, .art-slidecontainer1366_2000 .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainer1366_2000 .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainer1366_2000 .active.back {
+    opacity: 0;
+}
+
+
+.art-slide1366_20000 {
+    background-image:  url('images/slide1366_20000.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide1366_20000 {
+    background-image:  url('images/slide1366_20000.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide1366_20000 {
+    background-image:  url('images/slide1366_20000.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide1366_20000 {
+    background-image: url('images/slide1366_20000.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide1366_20000 {
+    background-image: url('images/slide1366_20000.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide1366_20001 {
+    background-image:  url('images/slide1366_20001.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide1366_20001 {
+    background-image:  url('images/slide1366_20001.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide1366_20001 {
+    background-image:  url('images/slide1366_20001.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide1366_20001 {
+    background-image: url('images/slide1366_20001.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide1366_20001 {
+    background-image: url('images/slide1366_20001.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide1366_20002 {
+    background-image:  url('images/slide1366_20002.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide1366_20002 {
+    background-image:  url('images/slide1366_20002.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide1366_20002 {
+    background-image:  url('images/slide1366_20002.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide1366_20002 {
+    background-image: url('images/slide1366_20002.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide1366_20002 {
+    background-image: url('images/slide1366_20002.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide1366_20003 {
+    background-image:  url('images/slide1366_20003.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide1366_20003 {
+    background-image:  url('images/slide1366_20003.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide1366_20003 {
+    background-image:  url('images/slide1366_20003.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide1366_20003 {
+    background-image: url('images/slide1366_20003.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide1366_20003 {
+    background-image: url('images/slide1366_20003.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide1366_20004 {
+    background-image:  url('images/slide1366_20004.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide1366_20004 {
+    background-image:  url('images/slide1366_20004.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide1366_20004 {
+    background-image:  url('images/slide1366_20004.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide1366_20004 {
+    background-image: url('images/slide1366_20004.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide1366_20004 {
+    background-image: url('images/slide1366_20004.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}.art-slide1366_20005 {
+    background-image:  url('images/slide1366_20005.png');
+        /* background-size:  auto auto; */
+        background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+/* special setup for header/pageslider */
+.responsive .art-header .art-slide1366_20005 {
+    background-image:  url('images/slide1366_20005.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.responsive .art-pageslider .art-slide1366_20005 {
+    background-image:  url('images/slide1366_20005.png');
+    background-size: auto auto;
+    background-position:  center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-header .art-slide1366_20005 {
+    background-image: url('images/slide1366_20005.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.default-responsive .art-pageslider .art-slide1366_20005 {
+    background-image: url('images/slide1366_20005.png');
+    background-size: auto auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.art-slidenavigator1366_2000 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 336px;
+  left: 79.33%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigator1366_2000
+{
+background: #9A9A9A;background: -webkit-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;background: linear-gradient(to bottom, rgba(194, 194, 194, 0.6) 0, rgba(128, 128, 128, 0.6) 84%, rgba(115, 115, 115, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.art-slidenavigator1366_2000 > a
+{
+background: #575757;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigator1366_2000 > a.active
+{
+background: #BFDBF1;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.art-slidenavigator1366_2000 > a:hover
+{
+background: #297DC2;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+<nav class="art-nav">
+    <div class="art-nav-inner">
+    <ul class="art-hmenu"><li><a href="inicio.html" class="active">Inicio</a></li></ul> 
+        </div>
+    </nav>
+<header class="art-header">
+
+    <div class="art-shapes">
+        <div class="art-object476611487"></div>
+<div class="art-textblock art-object237340245">
+        <div class="art-object237340245-text-container">
+        <div class="art-object237340245-text">Ultimate Performante</div>
+    </div>
+    
+</div>
+            </div>
+
+
+
+
+
+
+                        
+                    
+</header>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 67%" >
+        <h1>El nuevo gtr r-50</h1><p><br></p><p style="margin-top: 0px; margin-right: auto; margin-bottom: 28px; margin-left: auto; font-size: 19px; max-width: 696px; color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 400; text-align: left; background-color: rgb(251, 251, 251);">Una legendaria firma italiana y una japonesa han unido sus fuerzas para crear un monstruo. Nos referimos a Nissan e Italdesign quienes han creado un nuevo prototipo: el&nbsp;<strong style="font-weight: 700;">GT-R50 by Italdesign</strong>&nbsp;para celebrar el&nbsp;<strong style="font-weight: 700;">50 aniversario del pequeño Godzilla</strong>&nbsp;y de la casa con sede en Turín.</p><p style="margin-top: 0px; margin-right: auto; margin-bottom: 28px; margin-left: auto; font-size: 19px; max-width: 696px; color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 400; text-align: left; background-color: rgb(251, 251, 251);">Tomando como base el&nbsp;<a href="https://www.motorpasion.com.mx/nissan/japon-alguien-dono-nissan-gt-r-policia-para-ser-usado-como-patrulla" style="text-decoration: underline; color: rgb(153, 0, 0);">Nissan GT-R Nismo 2018</a>&nbsp;de producción regular, el Nissan GT-R Special edition se presentará en Europa este próximo mes de julio y es, de acuerdo con&nbsp;<strong style="font-weight: 700;">Alfonso Albaisa</strong>, vicepresidente senior de Diseño Global de Nissan: “un GT-R sin límites”.</p><p><br></p>
+    </div><div class="art-layout-cell layout-item-0" style="width: 33%" >
+        <h3>Dato curioso...</h3><p>Este carro sera tan exclusivo que se produciran solo 50 unidaes &nbsp;costara un millon de dolares, varios se quejan por el presio pero es diseñado por italionos y es el primer gr-r que nose diseña en japon.</p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout layout-item-1">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-2" style="width: 33%" >
+        <h3 style="text-align:center;">rines</h3><p style="text-align: center;"><img width="150" height="150" alt="" src="images/rims.png" class=""></p><p><span style="color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; text-align: left; background-color: rgb(251, 251, 251);">En este caso&nbsp;</span><strong style="font-weight: 700; color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; text-align: left; background-color: rgb(251, 251, 251);">los rines miden son de 21 x 10 pulgadas para el eje delantero y 21x10.5 para el trasero</strong><span style="color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; text-align: left; background-color: rgb(251, 251, 251);">. Estas piezas de aluminio fueron cubiertas con neumáticos Michelin Pilot Super Sport de 255/35 R21 y 285/30 R21 pulgadas, respectivamente.</span></p><p style="text-align: center;"><br></p>
+    </div><div class="art-layout-cell layout-item-3" style="width: 34%" >
+        <h3 style="text-align:center;">EMBRAGUE</h3><p style="text-align: center;"><img width="151" height="151" alt="" src="images/wheel.png" class=""></p><p><span style="color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; text-align: left; background-color: rgb(251, 251, 251);">La potencia llega al piso a través de la transmisión secuencial de doble embrague de 6 velocidades,&nbsp;</span><strong style="font-weight: 700; color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; text-align: left; background-color: rgb(251, 251, 251);">que fue optimizada para soportar la potencia del motor</strong><span style="color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; text-align: left; background-color: rgb(251, 251, 251);">.</span></p><p style="text-align: center;"><br></p>
+    </div><div class="art-layout-cell layout-item-2" style="width: 33%" >
+        <h3 style="text-align:center;">motor Y CABALLOS</h3><p style="text-align: center;"><img width="150" height="150" alt="" src="images/gear_wheel.png" class=""></p><p><span style="color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; text-align: left; background-color: rgb(251, 251, 251);">Bajo el cofre encontramos el motor V6 VR38DETT de 3.8 litros que genera una potencia 720 caballos de fuerza y 780 Nm de par, gracias a la&nbsp;</span><strong style="font-weight: 700; color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; text-align: left; background-color: rgb(251, 251, 251);">instalación de un turbocompresor doble GT3</strong><span style="color: rgb(51, 51, 51); font-family: Roboto, 'Open Sans', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 400; text-align: left; background-color: rgb(251, 251, 251);">&nbsp;con especificaciones de competencia.</span><br></p>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 1%" >
+        <h1><div id="1366_2000" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainer1366_2000" data-width="600" data-height="360">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slide1366_20000" >
+
+
+</div>
+<div class="art-slide-item art-slide1366_20001" >
+
+
+</div>
+<div class="art-slide-item art-slide1366_20002" >
+
+
+</div>
+<div class="art-slide-item art-slide1366_20003" >
+
+
+</div>
+<div class="art-slide-item art-slide1366_20004" >
+
+
+</div>
+<div class="art-slide-item art-slide1366_20005" >
+
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigator1366_2000" data-left="1" data-top="1">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+        
+        <br></h1>
+    </div><div class="art-layout-cell layout-item-0" style="width: 99%" >
+        <p><br></p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<p>Derechos reservados por mi y por DIOS amen 2019-2300 Feliz cumpleaños profa</p>
+</footer>
+
+    </div>
+    <p class="art-page-footer">
+        <span id="art-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+    </p>
+</div>
+
+
+</body></html>
